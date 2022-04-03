@@ -14,6 +14,10 @@ import { CustomisationRequestComponent } from './customisation-request/customisa
 import { ViewAllArtistsComponent } from './view-all-artists/view-all-artists.component';
 import { ViewArtistDetailsComponent } from './view-artist-details/view-artist-details.component';
 import { RegisterNewCustomerComponent } from './register-new-customer/register-new-customer.component';
+import { HeaderComponent } from './header/header.component';
+import { MainMenuComponent } from './main-menu/main-menu.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +31,11 @@ import { RegisterNewCustomerComponent } from './register-new-customer/register-n
     CustomisationRequestComponent,
     ViewAllArtistsComponent,
     ViewArtistDetailsComponent,
-    RegisterNewCustomerComponent
+    RegisterNewCustomerComponent,
+    HeaderComponent,
+    MainMenuComponent,
+    SidebarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
