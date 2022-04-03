@@ -9,5 +9,21 @@ import { SessionService } from '../services/session.service';
 })
 export class CustomerService {
 
-  constructor() { }
+  customers: Customer[];
+
+  constructor() {
+    this.customers = new Array();
+   }
+
+   customerLogin(email: string | undefined, password: string | undefined): Customer | null {
+    for (let customer of this.customers) 
+		{
+			if(customer.email == email && customer.password == password)
+			{
+				return customer;
+			}
+		}
+     return null;
+   }
+
 }
